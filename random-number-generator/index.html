@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Hot/Cold Guessing Game</title>
+    <style>
+        .hot {
+            color: red;
+        }
+        
+        .warm {
+            color: yellow;
+        }
+        
+        .cold {
+            color: blue;
+        }
+        
+        .freezing {
+            color: cyan;
+        }
+        
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the Hot/Cold Guessing Game</h1>
+    <p>Guess the number, it is between 1 and 1,000.</p>
+    <input type="number" id="guessInput" placeholder="Enter your guess">
+    <button onclick="makeGuess()">Guess</button>
+    <p id="feedback"></p>
+
+    <script>
+        const targetNumber = Math.floor(Math.random() * 1000) + 1;
+        let attempts = 0;
+
+        function makeGuess() {
+            const guess = parseInt(document.getElementById('guessInput').value);
+            attempts++;
+            const difference = Math.abs(targetNumber - guess);
+            const feedback = document.getElementById('feedback');
+
+            if (guess === targetNumber) {
+                feedback.textContent = `Congradulations! You've guessed the number in ${attempts} attempts.`;
+                feedback.className = 'success';
+            } else if (difference <= 10) {
+                feedback.textContent = 'Hot!';
+                feedback.className = 'hot';
+            } else if (difference <= 50) {
+                feedback.textContent = 'Warm!';
+                feedback.className = 'warm';
+            } else if (difference <= 100) {
+                feedback.textContent = 'Cold!';
+                feedback.className = 'cold';
+            } else {
+                feedback.textContent = 'Freezing!';
+                feedback.className = 'freezing';
+            }
+        }
+    </script>
+    <div>
+        <footer>&copy; Brian Waldschmidt </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
