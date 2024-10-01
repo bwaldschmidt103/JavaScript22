@@ -1,0 +1,62 @@
+/* styles.css */
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #ff4500;
+    margin-top: 20px;
+}
+
+#holidays {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+#holidays>div {
+    background-color: #fff;
+    border: 2px solid #ff4500;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+#holidays>div:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #ff4500;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffebcd;
+    border: 1px solid #ff4500;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #ffdab9;
+}
