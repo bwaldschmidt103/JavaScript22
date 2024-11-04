@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Getting Started</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>This is the first paragraph.</p>
+    <p>This is the sceond paragraph.</p>
+    <main>
+        <p>This is the third paragraph (It is in the main section).</p>
+    </main>
+
+    <!-- Adding a button that will call a function to hide the paragraphs -->
+    <button id="hideParagraphsButton">Hide Paragraphs</button>
+
+    <!-- Adding a div with an ID -->
+    <div id="myDiv">
+        This is a div and it has an ID.
+    </div>
+
+    <!-- Adding another button with an ID that will hide div's with an ID -->
+    <button id="hideDivButton">Hide Div</button>
+
+    <!-- Adding a couple of h2 headings for demonstration -->
+    <h2>Heading 1</h2>
+    <h2>Heading 2</h2>
+
+    <!-- Adding a script to handle the button clicks -->
+    <script>
+        // Function to hide paragraphs
+        $("#hideParagraphsButton").click(function() {
+            $("p").hide();
+        });
+
+        // Function to hide the div with an ID
+        $("#hideDivButton").click(function() {
+            $("#myDiv").hide();
+        });
+
+        // Function to make h2 headings disappear when clicked
+        $("h2").click(function() {
+            $(this).hide();
+        });
+    </script>
+    
+    <footer>
+        <p>&copy; 2024 Brian Waldschmidt</p>
+    </footer>
+
+</body>
+</html>
