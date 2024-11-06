@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Effects - Caribbean Fun</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the Caribbean!</h1>
+        <p>Experience the vibrant culture, stunning beaches, and delicious cuisine.</p>
+
+        <div id="div1" class="image">
+            <img src="images/caribbean1.jpg" alt="Caribbean Beach" />
+        </div>
+        <div id="div2" class="image">
+            <img src="images/caribbean2.jpg" alt="Caribbean Sunset"/>
+        </div>
+        <div id="div3" class="image">
+            <img src="images/caribbean3.jpg" alt="Caribbean Food" />
+        </div>
+
+        <button class="button" onclick="toggleDivs()">Hide/Show Images</button>
+        <button class="button" onclick="fadeDivs()">Fade Images</button>
+        <button class="button" onclick="slideDivs()">Slide Images</button>
+    </div>
+
+    <script>
+        function toggleDivs() {
+            $(".image").toggle();
+        }
+
+        function fadeDivs() {
+            $(".image").fadeToggle();
+        }
+
+        function slideDivs() {
+            $(".image").slideToggle();
+        }
+    </script>
+    
+</body>
+</html>
