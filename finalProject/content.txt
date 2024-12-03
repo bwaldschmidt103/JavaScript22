@@ -1,0 +1,2 @@
+<h2>Loaded Content</h2>
+<p>This content was loaded using jQuery AJAX.</p>

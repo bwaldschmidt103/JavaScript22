@@ -1,0 +1,78 @@
+/* Background Color */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0fff0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    margin-top: 50px; /* Adds a margin to create space below the h2 headers */
+    color: #555;
+}
+
+.tv-show {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.tv-show h2 {
+    margin: 0;
+}
+
+#animated-div {
+    position: absolute;
+    width: 350px;
+    left: -400px; /* Initial position off the viewport */
+    top: 95%; /* Vertical positioning control */
+    transform: translateY(-50%);
+    background-color: #fffacd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Adds a margin to create space above the header */
+}
+
+#animated-div img {
+    width: 50px; 
+    height: auto;
+}
+
+#ajax-content {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Text Colors */
+
+p {
+    color: #666;
+}
+
+#animated-div h2, #animated-div p {
+    color: #000;
+}
