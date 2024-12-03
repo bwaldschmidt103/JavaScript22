@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Dexter",
+        "main_character": "Dexter Morgan",
+        "network": "Showtime",
+        "start_date": "2006-10-01"
+    },
+    {
+        "name": "The Walking Dead",
+        "main_character": "Rick Grimes",
+        "network": "AMC",
+        "start_date": "2010-10-31"
+    },
+    {
+        "name": "Supernatural",
+        "main_character": "Sam and Dean Winchester",
+        "network": "The CW",
+        "start_date": "2005-09-13"
+    },
+    {
+        "name": "Mr. Robot",
+        "main_character": "Elliot Alderson",
+        "network": "USA Network",
+        "start_date": "2015-06-24"
+    },
+    {
+        "name": "Babylon 5",
+        "main_character": "John Sheridan",
+        "network": "PTEN",
+        "start_date": "1994-01-26"
+    }
+]
